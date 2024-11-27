@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/accounts.css">
+</head>
+<body>
+    <header>
+        <div class="company-info">
+            <div class="company-icon">
+                <a href="dashboard.html"><img src="css/photos/growth.png" alt="Company Logo"></a>
+            </div>
+            <div class="company-name">FinTrack</div>
+        </div>
+        <div class="account-title">Account</div>
+        <div class="profile dropdown">
+            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Profile Picture">
+            <div class="dropdown-content">
+                <a href="Account.html">Account</a>
+                <a href="logout.html">Logout</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section id="account-information">
+            <h2>Account Information</h2>
+            <ul id="account-info-list"></ul>
+            <button class="button" id="edit-account-btn">Edit Account</button>
+            <button class="button" id="save-account-btn" style="display: none;">Save Account</button>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio Summary</h2>
+            <table id="portfolioTable">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Quantity</th>
+                        <th>Value ($)</th>
+                    </tr>
+                </thead>
+                <tbody id="portfolioBody"></tbody>
+            </table>
+        </section>
+        <section id="transaction-history">
+            <h2>Transaction History</h2>
+            <table id="transactionTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Symbol</th>
+                        <th>Quantity</th>
+                        <th>Price ($)</th>
+                        <th>Total ($)</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionBody"></tbody>
+            </table>
+        </section>
+        <section id="watchlist">
+            <h2>Watchlist</h2>
+            <table id="watchlistTable">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Price ($)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="watchlistbody"></tbody>
+            </table>
+        </section>
+        <section id="positions">
+            <h2>Positions</h2>
+            <table id="positionsTable">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Quantity</th>
+                        <th>Average Cost ($)</th>
+                        <th>Market Value ($)</th>
+                        <th>Unrealized Gain/Loss ($)</th>
+                    </tr>
+                </thead>
+                <tbody id="positionsBody"></tbody>
+            </table>
+        </section>
+        <section id="account-settings">
+            <h2>Account Settings</h2>
+            <ul class="no-bullet">
+                <li><button class="button">Change Password</button></li>
+                <li><button class="button">Update Contact Information</button></li>
+                <li><button class="button">Link Bank Account</button></li>
+                <li><button class="button">Set Alerts</button></li>
+            </ul>
+        </section>
+    </div>
+    <script src="js/account.js"></script>
+</body>
+</html>

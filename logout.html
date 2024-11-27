@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+</head>
+<body>
+    <h1>Logout</h1>
+    <p>Are you sure you want to logout?</p>
+    <button onclick="logout()">Yes</button>
+</body>
+<script>
+    //function to clear local storage and users.json
+    function logout() {
+        localStorage.clear();
+        window.location.href = "homepage.html";
+    }
+</script>
+</html>

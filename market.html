@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack - Market News</title>
+    <link rel="stylesheet" href="css/markets.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="company-info">
+            <div class="company-icon">
+                <a href="dashboard.html"><img src="css/photos/growth.png" alt="Company Logo"></a>
+            </div>
+            <div class="company-name">FinTrack</div>
+        </div>
+        <h1>Market News</h1>
+        <div class="profile dropdown">
+            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Profile Picture">
+            <div class="dropdown-content">
+                <a href="Account.html">Account</a>
+                <a href="homepage.html">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="filter">
+        <h2>Filter News</h2>
+        <div>
+            <h3>Categories:</h3>
+            <a href="#" class="category" onclick="filterByCategory('all')">All Categories</a>
+            <a href="#" class="category" onclick="filterByCategory('earnings')">Earnings</a>
+            <a href="#" class="category" onclick="filterByCategory('mergers')">Mergers</a>
+            <a href="#" class="category" onclick="filterByCategory('product-launch')">Product Launch</a>
+            <a href="#" class="category" onclick="filterByCategory('acquisitions')">Acquisitions</a>
+            <a href="#" class="category" onclick="filterByCategory('partnerships')">Partnerships</a>
+            <a href="#" class="category" onclick="filterByCategory('expansion')">Expansion</a>
+            <a href="#" class="category" onclick="filterByCategory('restructuring')">Restructuring</a>
+            <a href="#" class="category" onclick="filterByCategory('divestitures')">Divestitures</a>
+        </div>
+        <div>
+            <h3>Companies:</h3>
+            <a href="#" class="company" onclick="filterByCompany('all')">All Companies</a>
+            <a href="#" class="company" onclick="filterByCompany('Apple Inc.')">Apple Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Microsoft Corp.')">Microsoft Corp.</a>
+            <a href="#" class="company" onclick="filterByCompany('Amazon.com Inc.')">Amazon.com Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Alphabet Inc.')">Alphabet Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Facebook Inc.')">Facebook Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Tesla Inc.')">Tesla Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Netflix Inc.')">Netflix Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('PayPal Holdings Inc.')">PayPal Holdings Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Visa Inc.')">Visa Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Johnson & Johnson')">Johnson & Johnson</a>
+            <a href="#" class="company" onclick="filterByCompany('Procter & Gamble Co.')">Procter & Gamble Co.</a>
+            <a href="#" class="company" onclick="filterByCompany('Bank of America Corp.')">Bank of America Corp.</a>
+            <a href="#" class="company" onclick="filterByCompany('JPMorgan Chase & Co.')">JPMorgan Chase & Co.</a>
+            <a href="#" class="company" onclick="filterByCompany('Coca-Cola Co.')">Coca-Cola Co.</a>
+            <a href="#" class="company" onclick="filterByCompany('Pfizer Inc.')">Pfizer Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('Exxon Mobil Corp.')">Exxon Mobil Corp.</a>
+            <a href="#" class="company" onclick="filterByCompany('Walmart Inc.')">Walmart Inc.</a>
+            <a href="#" class="company" onclick="filterByCompany('McDonald\s Corp.')">McDonald's Corp.</a>
+            <a href="#" class="company" onclick="filterByCompany('Berkshire Hathaway Inc.')">Berkshire Hathaway Inc.</a>
+        </div>
+        <div>
+            <h3>Date Range:</h3>
+            <input type="date" id="start-date" name="start-date">
+            <input type="date" id="end-date" name="end-date">
+            <button onclick="filterByDate()">Filter by Date</button>
+        </div>
+    </div>
+    <div class="news-container" id="news-container">
+    </div>
+    <script src="js/market.js"></script>
+</body>
+</html>

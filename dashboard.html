@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/dashboardse.css">
+</head>
+<body>
+    <header>
+        <div class="company-info">
+            <div class="company-icon">
+                <a href="dashboard.html"><img src="css/photos/growth.png" alt="Company Logo"></a>
+            </div>
+            <div class="company-name">FinTrack</div>
+        </div>
+        <h1>Dashboard</h1>
+        <div class="profile dropdown">
+            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Profile Picture">
+            <div class="dropdown-content">
+                <a href="Account.html">Account</a>
+                <a href="logout.html">Logout</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="market.html">Market News</a></li>
+            <li><a href="Educational.html">Educational Resources</a></li>
+            <li><a href="Stock.html">Stocks</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="dashboard">
+            <div class="data-section">
+                <h3>Major Indices</h3>
+                <ul id="major-indices-list">
+                    <li>Index 1: 2500</li>
+                    <li>Index 2: 1500</li>
+                </ul>
+            </div>
+            <div class="data-section">
+                <h3>Top Gainers</h3>
+                <ul id="top-gainers-list">
+                    <li>Stock A: +5%</li>
+                    <li>Stock B: +3%</li>
+                </ul>
+            </div>
+            <div class="data-section">
+                <h3>Top Losers</h3>
+                <ul id="top-losers-list">
+                    <li>Stock C: -4%</li>
+                    <li>Stock D: -2%</li>
+                </ul>
+            </div>
+            <div class="data-section">
+                <h3>Active Stocks</h3>
+                <ul id="active-stocks-list">
+                    <li>Stock E</li>
+                    <li>Stock F</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

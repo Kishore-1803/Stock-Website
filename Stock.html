@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/stocks.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="company-info">
+            <div class="company-icon">
+                <a href="dashboard.html"><img src="css/photos/growth.png" alt="Company Logo"></a>
+            </div>
+            <div class="company-name">FinTrack</div>
+        </div>
+        <h1>Stocks</h1>
+        <div class="profile dropdown">
+            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="Profile Picture">
+            <div class="dropdown-content">
+                <a href="Account.html">Account</a>
+                <a href="logout.html">Logout</a>
+            </div>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for stock companies...">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="container">
+        <section class="stock-list">
+            <h2>Companies</h2>
+            <ul id="company-list"></ul>
+        </section>
+        <section class="stock-info">
+            <h2>Stock Information</h2>
+            <ul id="stock-info-list">
+                <li><strong>Symbol:</strong> <span id="stock-symbol">-</span></li>
+                <li><strong>Company:</strong> <span id="stock-company">-</span></li>
+                <li><strong>Current Price:</strong> $<span id="stock-price">-</span></li>
+                <li><strong>Volume:</strong> <span id="stock-volume">-</span></li>
+                <li><strong>Market Cap:</strong> $<span id="stock-market-cap">-</span></li>
+                <li><strong>P/E Ratio:</strong> <span id="stock-pe-ratio">-</span></li>
+            </ul>
+            <div class="stock-actions">
+                <button class="buy">Buy</button>
+                <button class="sell">Sell</button>
+                <button class="watchlist">Add to Watchlist</button>
+            </div>
+        </section>
+        <section class="historical-charts">
+            <h2>Historical Price Chart</h2>
+            <canvas id="historical-chart"></canvas>
+        </section>
+    </div>
+    <script src="js/stock.js"></script>
+</body>
+</html>

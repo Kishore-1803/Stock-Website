@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('photos/14671171.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero p {
+    margin-top: -30px;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.features {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #1DA1F2; 
+}
+
+.feature h3 {
+    margin: 10px 0;
+}
+
+.about {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services {
+    background-color: #fff;
+    display: flexbox;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.services p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact input[type="submit"] {
+    background-color: #1DA1F2; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #0a7abf; 
+}
+
+footer {
+    background-color: #1DA1F2; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
